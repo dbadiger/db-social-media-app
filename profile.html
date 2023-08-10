@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Darshan Profile - Vishwakarma Application</title>
+    <link rel="shortcut icon" href="images/chat.png" type="image/x-icon" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <a href="index.html">
+          <img src="images/vishwakarma logo.png" alt="Logo" class="logo" />
+        </a>
+        <ul>
+          <li><img src="images/notification-white.png" /></li>
+          <li><img src="images/inbox-white.png" /></li>
+          <li><img src="images/video.png" /></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="images/search.png" alt="" />
+          <input type="text" class="search-text" placeholder="Search" />
+        </div>
+        <div class="nav-user-icon online" onclick="settingMenuToggle()">
+          <img src="images/darshan.jpg" alt="user" />
+        </div>
+      </div>
+
+      <!-- profile Setting Menu -->
+      <div class="settings-menu">
+        <!-- <div id="dark-btn" class="dark-btn-on"> -->
+        <div id="dark-btn">
+          <span></span>
+        </div>
+
+        <div class="seetings-menu-inner">
+          <div class="user-profile">
+            <img src="images/darshan.jpg" alt="" />
+            <div class="">
+              <p>Darshan</p>
+              <a href="profile.html">See Profile</a>
+            </div>
+          </div>
+          <hr />
+
+          <div class="user-profile">
+            <img src="images/information.png" alt="" />
+            <div class="">
+              <p>Give feedback</p>
+              <a href="">Help us to improve</a>
+            </div>
+          </div>
+          <hr />
+
+          <div class="settings-links">
+            <img src="images/settings1.png" class="settings-icon" />
+            <a href="#"
+              >Settings & Privacy
+              <img src="images/right-arrow.png" width="10px"
+            /></a>
+          </div>
+
+          <div class="settings-links">
+            <img src="images/question.png" class="settings-icon" />
+            <a href="#"
+              >Help & Support <img src="images/right-arrow.png" width="10px"
+            /></a>
+          </div>
+
+          <div class="settings-links">
+            <img src="images/moon.png" class="settings-icon" />
+            <a href="#"
+              >Display & Accessibility
+              <img src="images/right-arrow.png" width="10px"
+            /></a>
+          </div>
+
+          <div class="settings-links">
+            <img src="images/logout.png" class="settings-icon" />
+            <a href="#"
+              >Logout <img src="images/right-arrow.png" width="10px"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!------------ Profile Page Creation -------->
+    <div class="profile-container">
+      <img src="images/cover.jpg" class="cover-img" />
+
+      <div class="profile-details">
+        <div class="pd-left">
+          <div class="pd-row">
+            <img src="images/user5.jpg" alt="" class="pd-img" />
+            <div class="">
+              <h3>Darshan Badiger</h3>
+              <p>644 Friends - 12 Mutual</p>
+              <img src="images/friend1.jpg" />
+              <img src="images/friend2.jpg" />
+              <img src="images/friend3.jpg" />
+              <img src="images/friend4.jpg" />
+              <img src="images/friend5.jpg" />
+            </div>
+          </div>
+        </div>
+        <div class="pd-right">
+          <button type="button"><img src="images/add-user.png" />Friend</button>
+          <button type="button">
+            <img src="images/message-white.png" />Message
+          </button>
+          <br />
+          <a href="#"><img src="images/more-gray.png" /></a>
+        </div>
+      </div>
+
+      <!------- profile Information ------->
+      <div class="profile-info">
+        <!----- Information Container (Left Container)  ----->
+        <div class="info-col">
+          <div class="profile-intro">
+            <h3>Inro</h3>
+            <p class="intro-text">
+              Hope is the belief in the probability of the possible rather than
+              the necessity of the probable.
+              <img src="images/smiling.png" />
+            </p>
+            <hr />
+            <ul>
+              <li>
+                <img src="images/profession.png" />Software Engineer at Google
+              </li>
+              <li>
+                <img src="images/graduation-hat.png" />KLE Technonogical
+                University
+              </li>
+              <li>
+                <img src="images/location.png" />Lives in Bengaluru, India
+              </li>
+              <li><img src="images/home.png" />From Hubli, India</li>
+            </ul>
+          </div>
+
+          <!------- Image Gallery ------->
+          <div class="profile-intro">
+            <div class="title-box">
+              <h3>Photos</h3>
+              <a href="#"> All Photos</a>
+            </div>
+            <div class="photo-box">
+              <div class=""><img src="images/friend5.jpg" alt="" /></div>
+              <div class=""><img src="images/photo3.png" alt="" /></div>
+              <div class=""><img src="images/photo2.png" alt="" /></div>
+              <div class=""><img src="images/friend1.jpg" alt="" /></div>
+              <div class=""><img src="images/friend2.jpg" alt="" /></div>
+              <div class=""><img src="images/friend4.jpg" alt="" /></div>
+            </div>
+          </div>
+
+          <div class="profile-intro">
+            <div class="title-box">
+              <h3>Friends</h3>
+              <a href="#"> All Friends</a>
+            </div>
+            <p>644 (12 Mutual)</p>
+            <div class="friends-box">
+              <div class="">
+                <img src="images/user1.jpg" alt="" />
+                <p>Ramesh</p>
+              </div>
+              <div class="">
+                <img src="images/user2.jpg" alt="" />
+                <p>Suresh</p>
+              </div>
+              <div class="">
+                <img src="images/user3.jpg" alt="" />
+                <p>Akash</p>
+              </div>
+              <div class="">
+                <img src="images/friend4.jpg" alt="" />
+                <p>Vikas</p>
+              </div>
+              <div class="">
+                <img src="images/user4.jpg" alt="" />
+                <p>Ganesh</p>
+              </div>
+              <div class="">
+                <img src="images/user5.jpg" alt="" />
+                <p>Girish</p>
+              </div>
+              <div class="">
+                <img src="images/friend1.jpg" alt="" />
+                <p>Chetan</p>
+              </div>
+              <div class="">
+                <img src="images/friend3.jpg" alt="" />
+                <p>Kiran</p>
+              </div>
+              <div class="">
+                <img src="images/friend5.jpg" alt="" />
+                <p>Arun</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Write Post Container -->
+        <div class="post-col">
+          <div class="write-post-container">
+            <div class="user-profile">
+              <img src="images/darshan.jpg" alt="" />
+              <div class="">
+                <p>Darshan</p>
+                <small
+                  >Public
+                  <i class="fa-solid fa-caret-down" style="color: #1876f2"></i>
+                </small>
+              </div>
+            </div>
+
+            <div class="post-input-container">
+              <textarea placeholder="Post someting..." rows="3"></textarea>
+
+              <div class="add-post-links">
+                <a href="#"
+                  ><img src="images/video (1).png" alt="" /><span
+                    >Live Video</span
+                  ></a
+                >
+                <a href="#"
+                  ><img src="images/camera.png" alt="" /><span
+                    >Photo/Video</span
+                  ></a
+                >
+                <a href="#"
+                  ><img src="images/smiling.png" alt="" /><span
+                    >Feeling Activity</span
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- User Posts -->
+          <!-- Post 1 -->
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="images/user1.jpg" />
+                <div class="">
+                  <p>Akshata K</p>
+                  <span>August 07 2023, 2:45PM </span>
+                </div>
+              </div>
+              <a href="#">
+                <i class="fas fa-ellipsis-v" style="color: #626262"></i
+              ></a>
+            </div>
+
+            <p class="post-text">
+              Subscribe <span>@darshan_badiger</span> youtube channel<a
+                href="#"
+              >
+                #darshanbadiger</a
+              >
+              <a href="#"> #YouTube</a>
+            </p>
+            <img src="images/post-feed1.jpg" class="post-img" />
+
+            <div class="post-row">
+              <div class="activity-icons">
+                <div class=""><img src="images/thumb-up.png" alt="" /> 199</div>
+                <div class=""><img src="images/chat (1).png" alt="" /> 21</div>
+                <div class=""><img src="images/share.png" alt="" /> 42</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="images/user1.jpg" alt="" />
+                <i class="fa-solid fa-caret-down" style="color: #626262"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 2 -->
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="images/user2.jpg" />
+                <div class="">
+                  <p>Kiran S</p>
+                  <span>August 07 2023, 2:32PM </span>
+                </div>
+              </div>
+              <a href="#">
+                <i class="fas fa-ellipsis-v" style="color: #626262"></i
+              ></a>
+            </div>
+
+            <p class="post-text">
+              Your <span>TIME</span> is Limited!!<a href="#"> #stevejobs</a>
+              <a href="#"> #motivation</a>
+            </p>
+            <img src="images/post-feed2.jpg" class="post-img" />
+
+            <div class="post-row">
+              <div class="activity-icons">
+                <div class=""><img src="images/thumb-up.png" alt="" /> 129</div>
+                <div class=""><img src="images/chat (1).png" alt="" /> 12</div>
+                <div class=""><img src="images/share.png" alt="" /> 22</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="images/user2.jpg" alt="" />
+                <i class="fa-solid fa-caret-down" style="color: #626262"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 3 -->
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="images/user3.jpg" />
+                <div class="">
+                  <p>Sushil</p>
+                  <span>August 07 2023, 1:00PM </span>
+                </div>
+              </div>
+              <a href="#">
+                <i class="fas fa-ellipsis-v" style="color: #626262"></i
+              ></a>
+            </div>
+
+            <p class="post-text">
+              Quote of the Day:
+              <span
+                >It's the possibility of having a dream come true that makes
+                life interesting.</span
+              ><a href="#"> #motivation</a>
+              <a href="#"> #dailyquotes</a>
+            </p>
+            <img src="images/post-feed3.jpg" class="post-img" />
+
+            <div class="post-row">
+              <div class="activity-icons">
+                <div class=""><img src="images/thumb-up.png" alt="" /> 199</div>
+                <div class=""><img src="images/chat (1).png" alt="" /> 21</div>
+                <div class=""><img src="images/share.png" alt="" /> 42</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="images/user3.jpg" alt="" />
+                <i class="fa-solid fa-caret-down" style="color: #626262"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 4 -->
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="images/user4.jpg" />
+                <div class="">
+                  <p>Ramesh</p>
+                  <span>August 07 2023, 11:40AM </span>
+                </div>
+              </div>
+              <a href="#">
+                <i class="fas fa-ellipsis-v" style="color: #626262"></i
+              ></a>
+            </div>
+
+            <p class="post-text">
+              To my amazing friends, thank you for being there always.
+              <span>Happy Friendship Day 2023! </span>
+              <a href="#"> #friendshipday</a>
+              <a href="#"> #friends</a>
+              <a href="#"> #friendsforever</a>
+            </p>
+            <img src="images/ads.jpg" class="post-img" />
+
+            <div class="post-row">
+              <div class="activity-icons">
+                <div class=""><img src="images/thumb-up.png" alt="" /> 230</div>
+                <div class=""><img src="images/chat (1).png" alt="" /> 24</div>
+                <div class=""><img src="images/share.png" alt="" /> 61</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="images/user4.jpg" alt="" />
+                <i class="fa-solid fa-caret-down" style="color: #626262"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------- End of Profile Page --------->
+
+    <div class="footer">
+      <p>Copyright 2023 - Darshan Badiger</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
